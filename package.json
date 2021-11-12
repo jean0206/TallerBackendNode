@@ -1,0 +1,20 @@
+{
+  "name": "tallerback",
+  "version": "1.0.0",
+  "description": "Taller creado como ejercicio de practica para la clase de web avanzada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jean0206/TallerBackendNode.git"
+  },
+  "author": "Jean Ortiz y Victor Mora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jean0206/TallerBackendNode/issues"
+  },
+  "homepage": "https://github.com/jean0206/TallerBackendNode#readme"
+}
