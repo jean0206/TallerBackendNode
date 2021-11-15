@@ -13,6 +13,7 @@ app.use(morgan('dev'));
 //app.use(bodyParser.json());
 
 //Routes
+app.use(express.json());
 app.use('/api/', require('./routes/test.route'));
 app.use('/users/', require('./routes/userRoutes'));
 app.use('/notes/', require('./routes/noteRoutes'));
