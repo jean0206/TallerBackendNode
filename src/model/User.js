@@ -1,9 +1,30 @@
-class User {
-    constructor(name, username, identification, password, photo){
-        this.name=name;
-        this.username=username;
-        this.identification=identification;
-        this.password=password;
-        this.photo=photo;
+const mongoose = require('mongoose')
+
+const userSchema = new mongoose.Schema({
+    firstname:{
+        type:String,
+        required: true
+    },
+    lastname: {
+        type:String,
+        required:true
+    },
+    username: {
+        type: String,
+        required: true,
+        minlength:[8,'El nombre de usuario debe ser minimo de 8 caracteres']
+    },
+    identification:{
+        type: Number,
+        required: true,
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    photo: {
+        type: String
     }
-}
+})
+
+module.exports = mongoose.model('user',userSchema)
