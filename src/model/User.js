@@ -12,7 +12,8 @@ const userSchema = new mongoose.Schema({
     username: {
         type: String,
         required: true,
-        minlength:[8,'El nombre de usuario debe ser minimo de 8 caracteres']
+        minlength:[8,'El nombre de usuario debe ser minimo de 8 caracteres'],
+        unique: true
     },
     identification:{
         type: Number,
