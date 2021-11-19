@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
-app.set('Port', 4000);
+app.set('Port', process.env.PORT || 4000);
 
 app.use(morgan('dev'));
 /*app.use(bodyParser.urlEncoded({
